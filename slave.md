@@ -15,6 +15,7 @@
 ### Installed with pip
 
 - celery == 3.1.12
+- biom-format == 2.0.1
 
 ### Installed with source
 
