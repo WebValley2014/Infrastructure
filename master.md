@@ -7,6 +7,10 @@
 
 ## Python package
 
+### Installed with apt
+
+- numpy == 1:1.8.1-1ubuntu1
+
 ### Installed with pip
 
 - celery == 3.1.12
