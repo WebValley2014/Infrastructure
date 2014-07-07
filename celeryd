@@ -1,0 +1,18 @@
+# App instance to use
+# comment out this line if you don't use an app
+CELERY_APP="tasks
+# or fully qualified:
+#CELERY_APP="proj.tasks:app"
+
+# Where to chdir at start.
+CELERYD_CHDIR="/home/ubuntu/Pipeline"
+
+# Workers should run as an unprivileged user.
+#   You need to create this user manually (or you can choose
+#   a user/group combination that already exists, e.g. nobody).
+CELERYD_USER="celery"
+CELERYD_GROUP="celery"
+
+# If enabled pid and log directories will be created if missing,
+# and owned by the userid/group configured.
+CELERY_CREATE_DIRS=1
