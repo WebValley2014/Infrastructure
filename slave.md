@@ -35,6 +35,10 @@ Locate [init script](https://raw.githubusercontent.com/celery/celery/master/extr
 
 Locate [celeryd](celeryd) in /etc/default
 
+### User
+
+    useradd -d /opt/Pipeline -g celery -s /bin/bash celery
+
 ## Biological software
 
 ### mothur
@@ -47,7 +51,7 @@ Installed with apt: 1.8.0+dfsg-2
 
 #### Config
 
-Locate [qiime_config](qiime_config) in /etc/qiime
+Locate [qiime_config](qiime_config) in /etc/qiime and create symlink at /home/ubuntu/.qiime_config and /opt/Pipeline/.qiime_config
 
 #### FastTree
 
@@ -71,3 +75,6 @@ Locate [greengenes core set data file](http://greengenes.lbl.gov/Download/Sequen
 
     STATDOPTS="--port 49151 --outgoing-port 49152"
 
+## Pipeline
+
+Clone [pipeline](https://github.com/WebValley2014/Pipeline.git) in /opt/Pipeline
