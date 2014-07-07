@@ -5,7 +5,7 @@ CELERY_APP="tasks
 #CELERY_APP="proj.tasks:app"
 
 # Where to chdir at start.
-CELERYD_CHDIR="/home/ubuntu/Pipeline"
+CELERYD_CHDIR="/opt/Pipeline"
 
 # Workers should run as an unprivileged user.
 #   You need to create this user manually (or you can choose
