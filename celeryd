@@ -1,6 +1,6 @@
 # App instance to use
 # comment out this line if you don't use an app
-CELERY_APP="tasks
+CELERY_APP="tasks"
 # or fully qualified:
 #CELERY_APP="proj.tasks:app"
 
