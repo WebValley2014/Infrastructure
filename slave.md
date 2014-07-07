@@ -2,7 +2,7 @@
 
 ## General info
 
-- IP: 54.76.199.24
+- IP: 54.77.29.115
 - Instance type: m3.large
 
 ## Python package
