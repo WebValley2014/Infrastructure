@@ -1,0 +1,23 @@
+upstream django {
+	server	localhost:8000;
+}
+
+server {
+	listen		80 default_server;
+	server_name	localhost;
+	root		/usr/share/WebDev/WebDev;
+	access_log	/var/log/nginx/webdev.access.log;
+	error_log	/var/log/nginx/webdev.error.log;
+	
+	location / {
+	  proxy_pass		http://django;
+	  proxy_redirect	off;
+	  proxy_set_header	Host		$host;
+	  proxy_set_header	X-Real-IP	$remote_addr;
+	  proxy_set_header	X-Forwarded-For	$proxy_add_x_forwarded_for;
+	}
+
+	location /static {
+		root	/usr/share/WebDev/WebDev/WebDev/;
+	}
+}
